@@ -114,7 +114,7 @@ public class DamageIndicatorClient implements ClientModInitializer {
 
     private void render(GuiGraphicsExtractor graphics, DeltaTracker deltaTracker) {
         Minecraft mc = Minecraft.getInstance();
-        if (mc.player == null || indicators.isEmpty() || mc.options.hideGui) return;
+        if (mc.player == null || indicators.isEmpty()) return;
 
         float pt = deltaTracker.getGameTimeDeltaPartialTick(false);
 
